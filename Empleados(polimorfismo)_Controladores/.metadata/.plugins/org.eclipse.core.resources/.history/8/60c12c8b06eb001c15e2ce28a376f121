@@ -1,0 +1,18 @@
+package empleados;
+
+public class Executive extends Employee{
+
+	protected double bonus;
+	
+	public Executive() {
+		
+	}
+	
+	public double pay() {
+		return 3000;
+	}
+	
+	public void awardBonus(double execBonus) {
+		bonus=execBonus;
+	}
+}

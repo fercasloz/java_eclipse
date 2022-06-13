@@ -1,0 +1,7 @@
+package empleados;
+
+public class Staff {
+
+	StaffMember staffList[]=new StaffMember[100];
+	int cont=0;
+}

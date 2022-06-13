@@ -1,0 +1,22 @@
+package empleados;
+
+public class Employee extends StaffMember{
+	
+	protected String socialSecurityName;
+	protected double payRate;
+	
+	public Employee() {
+		
+	}
+	
+	public double pay() {
+		return payRate;
+	}
+	
+	public String toString() {
+		return "Soy un empleado y me llamo" + name;
+	}
+	
+	
+
+}

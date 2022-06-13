@@ -1,0 +1,17 @@
+
+package numeros_primos;
+import java.io.*;
+
+public class Gestor_NumerosPrimos {
+	static int cantidad_primos;
+	
+	public static void escribir_Primos(int num_maximo, String nombre_archivo) {
+		
+		try {
+			PrintWriter output;
+			output=new PrintWriter(new FileWriter(nombre_archivo));
+		}
+		
+	}
+
+}

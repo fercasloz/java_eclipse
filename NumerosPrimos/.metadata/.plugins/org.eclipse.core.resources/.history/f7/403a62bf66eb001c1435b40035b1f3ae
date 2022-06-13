@@ -1,0 +1,64 @@
+
+package numeros_primos;
+import java.io.*;
+
+public class Gestor_NumerosPrimos {
+	static int cantidad_primos;
+	
+	public static void escribir_Primos(int num_maximo, String nombre_archivo) {
+		
+		try {
+			PrintWriter output;
+			output=new PrintWriter(new FileWriter(nombre_archivo));
+			for(int i=0;i<num_maximo;i++) {
+				if(esPrimo(i)==true) {
+					output.println(i);
+					cantidad_primos++;
+				}
+			}output.close();
+		}
+		catch(IOException e) {
+			System.out.println("Excepcion de E/S: " + e.toString());
+		}
+		
+	}
+
+	public static String Comprobar_Primo(int num_comprobar, String nombre_Archivo) {
+		
+		String no = "No es primo";
+		
+		if(num_comprobar <=200){
+			try {
+				BufferedReader input;
+				input = new BufferedReader(new FileReader(nombre_Archivo));
+				
+				for(int i=0;i<cantidad_primos;i++) {
+					int line=Integer.parseInt(input.readLine());
+					if(num_comprobar==line) {
+						no ="es primo";
+					}
+					
+				}
+				input.close();
+			}
+			catch(IOException e2) {
+				System.out.println("I/O Exception :" + e2.toString());
+			}
+			
+		}
+		
+		if(num_comprobar>200) {
+			no="es primo";
+			try {
+				
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,5 @@
+package patron_observador;
+
+public interface Observador {
+
+}

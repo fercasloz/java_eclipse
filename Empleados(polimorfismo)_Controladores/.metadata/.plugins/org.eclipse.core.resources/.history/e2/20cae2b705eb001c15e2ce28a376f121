@@ -1,0 +1,12 @@
+package empleados;
+
+public class Volunteer extends StaffMember{
+	
+	public Volunteer(String name_v, String address_v,
+			String phone_v) {
+		
+		super(name_v, address_v, phone_v);
+		
+	}
+
+}

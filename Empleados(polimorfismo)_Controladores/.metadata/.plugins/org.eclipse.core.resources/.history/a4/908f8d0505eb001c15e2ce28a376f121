@@ -1,0 +1,24 @@
+package empleados;
+
+public class Hourly extends Employee{
+
+	protected int hoursWorked;
+	
+	public Hourly() {
+		
+	}
+	
+	public double pay() {
+		double dinero=(15*hoursWorked)+ payRate;
+		return dinero;
+	}
+	
+	public void addHours(int moreHours) {
+		hoursWorked= hoursWorked + moreHours;
+	}
+	
+	public String toString() {
+		return "Soy un trabajador y me llamo" + name + ", voy a cobrar por"
+				+ hoursWorked + " horas de trabajo";
+	}
+}
